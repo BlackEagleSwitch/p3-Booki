@@ -104,7 +104,6 @@ main {
 }
 
 .presentation {
-    height: 53px;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -117,6 +116,7 @@ main {
 form {
     height: 49px;
     display: flex;
+    position: relative;
 }
 
 form .fa-location-dot {
@@ -167,6 +167,24 @@ form .send:hover {
     box-shadow: 1px 2px 4px grey;
 }
 
+form .glass{
+    display: none;
+    
+    width: 49px;
+    height: 49px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+}
+
+form .glass i{
+    color: white;
+}
+
 .filter {
     column-gap: 15px;
     display: flex;
@@ -174,8 +192,10 @@ form .send:hover {
     flex-direction: row;
 }
 
-.filter div {
+.filter .container-button,
+.filter .container-button div {
     display: flex;
+    flex-direction: row;
     column-gap: 15px;
 }
 
@@ -208,6 +228,7 @@ form .send:hover {
 
 .info i {
     width: 24px;
+    min-width: 24px;
     height: 24px;
     display: flex;
     font-size: 10px;
@@ -237,6 +258,7 @@ form .send:hover {
 .container-cards article {
     border-radius: 20px;
     background-color: white;
+    box-shadow: 0 2px 10px #c6c6c6;
 }
 
 .container-text .rating {
@@ -452,4 +474,136 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    header .container-logo{
+        margin: auto;
+    }
+
+    header nav {
+        column-gap: unset;
+        margin-right: unset;
+    }
+    
+    header nav a {
+        padding-top: unset;
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 17px;
+    }
+    
+    header nav a:hover {
+        padding-top: unset;
+        border-top: none;
+
+        padding-bottom: 15px;
+        border-bottom: #0065FC solid 2px;
+    }
+
+    .research{
+        margin: 0 20px;
+    }
+
+    form .search-bar{
+        width: unset;
+        width: 100%;
+        border-radius: 0 15px 15px 0;
+    }
+
+    form .send{
+        display: none;
+    }
+
+    form .glass{
+        display: flex;
+    }
+
+    .filter{
+        row-gap: 20px;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .filter .container-button{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .filter .container-button div{
+        column-gap: 10px;
+    }
+
+    .filter button{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .container-hebergement-popular{
+        margin: unset;
+        gap: unset;
+        flex-direction: column-reverse;
+    }
+
+    .container-hebergement-popular section{
+        padding: 30px 20px;
+        border-radius: unset;
+    }
+
+    .popular .container-cards,
+    .hebergement .container-cards{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .activity, .activity .container-cards,
+    .hebergement .container-cards div{
+        flex-direction: column;
+    }
+
+    .popular .container-cards article,
+    .hebergement .container-cards article{
+        width: unset;
+    }
+
+    .popular .container-cards a,
+    .hebergement .container-cards a,
+    .activity .container-cards{
+        row-gap: 15px;
+    }
+
+    .container-hebergement-popular .hebergement{
+        background-color: white;
+        row-gap: 15px;
+    }
+    
+    .activity{
+        margin: 0 30px;
+        padding: unset;
+    }
+
+    .activity .container-cards article{
+        width: unset;
+    }
+
+    .activity .container-cards .container-img{
+        height: 141px;
+    }
+    
+    .activity .container-cards .container-text{
+        height: 59px;
+    }
+    
+    footer{
+        margin: unset;
+        flex-direction: column;
+    }
+    
+    footer div{
+        width: unset;
+    }
+}
