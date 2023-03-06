@@ -210,7 +210,23 @@ form .send:hover {
     border-radius: 12px;
 }
 
-footer {}
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    margin: 0 50px;
+}
+
+footer div{
+    gap: 15px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer a:hover{
+    opacity: 50%;
+}
 
 @media screen and (max-width: 992px) {}
 
