@@ -23,6 +23,21 @@ i {
     color: #0065FC;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+
 button,
 input {
     border: none;
@@ -92,10 +107,6 @@ main {
     gap: 8px;
 }
 
-.presentation h2 {
-    font-size: 22px;
-}
-
 .presentation p {
     font-size: 16px;
 }
@@ -147,6 +158,56 @@ form .send {
 
 form .send:hover {
     box-shadow: 1px 2px 4px grey;
+}
+
+.filter{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.filter div{
+    display: flex;
+    gap: 15px;
+}
+
+.filter button{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: #D9D9D9 solid 2px;
+    padding: 15px 19px;
+}
+
+.filter button:hover,
+.filter button:focus{
+    background-color: #DEEBFF;
+}
+
+.filter button i{
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info i{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    border: #D9D9D9 solid 1px;
+    border-radius: 12px;
 }
 
 footer {}
