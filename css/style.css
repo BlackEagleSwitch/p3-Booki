@@ -6,7 +6,7 @@
 }
 
 body {
-    gap: 50px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     max-width: 1400px;
@@ -44,7 +44,36 @@ input {
 
 /* -------------------------------------------- */
 
-header {}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container-logo {
+    padding: 30px;
+}
+
+header img {
+    height: 19px;
+}
+
+header nav {
+    display: flex;
+    gap: 69px;
+    margin-right: 42px;
+}
+
+header nav a {
+    padding-top: 16px;
+}
+
+header nav a:hover {
+    padding-top: 14px;
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+}
+
+/* ---------- */
 
 main {}
 
