@@ -33,7 +33,7 @@ h3 {
     font-weight: 700;
 }
 
-h4{
+h4 {
     font-size: 16px;
     font-weight: 700;
 }
@@ -42,6 +42,10 @@ button,
 input {
     border: none;
     background-color: transparent;
+}
+
+span {
+    font-weight: bold;
 }
 
 .column {
@@ -86,7 +90,7 @@ header nav a:hover {
 
 /* ---------- */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     row-gap: 35px;
@@ -140,7 +144,7 @@ form .search-bar[type=text] {
     padding: 0 5px 0 6px;
 }
 
-form .search-bar::placeholder{
+form .search-bar::placeholder {
     color: black;
 }
 
@@ -163,19 +167,19 @@ form .send:hover {
     box-shadow: 1px 2px 4px grey;
 }
 
-.filter{
+.filter {
     column-gap: 15px;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.filter div{
+.filter div {
     display: flex;
     column-gap: 15px;
 }
 
-.filter button{
+.filter button {
     height: 50px;
     display: flex;
     align-items: center;
@@ -188,21 +192,21 @@ form .send:hover {
 }
 
 .filter button:hover,
-.filter button:focus{
+.filter button:focus {
     background-color: #DEEBFF;
 }
 
-.filter button i{
+.filter button i {
     font-size: 20px;
 }
 
-.info{
+.info {
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
 
-.info i{
+.info i {
     width: 24px;
     height: 24px;
     display: flex;
@@ -215,13 +219,13 @@ form .send:hover {
 
 /* --------------- */
 
-.container-hebergement-popular{
+.container-hebergement-popular {
     display: flex;
     column-gap: 40px;
     margin: 0 50px;
 }
 
-.container-hebergement-popular section{
+.container-hebergement-popular section {
     row-gap: 30px;
     display: flex;
     flex-direction: column;
@@ -230,7 +234,7 @@ form .send:hover {
     padding: 30px;
 }
 
-.container-cards article{
+.container-cards article {
     border-radius: 20px;
     background-color: white;
 }
@@ -239,19 +243,19 @@ form .send:hover {
     font-size: 13px;
 }
 
-.hebergement{
+.hebergement {
     width: 65%;
     display: flex;
     row-gap: 30px;
     flex-direction: column;
 }
 
-.hebergement .container-cards{
+.hebergement .container-cards {
     display: flex;
     column-gap: 30px;
 }
 
-.hebergement article{
+.hebergement article {
     width: 33%;
     height: 100%;
     display: flex;
@@ -260,7 +264,7 @@ form .send:hover {
     transition: .5s;
 }
 
-.hebergement article:hover{
+.hebergement article:hover {
     transform: scale(1.15);
 }
 
@@ -268,7 +272,7 @@ form .send:hover {
     padding: 4px;
 }
 
-.hebergement .container-img img{
+.hebergement .container-img img {
     width: 100%;
     height: 114px;
     border-radius: 20px 20px 0 0;
@@ -276,7 +280,7 @@ form .send:hover {
     object-fit: cover;
 }
 
-.hebergement .container-text{
+.hebergement .container-text {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -284,15 +288,15 @@ form .send:hover {
     margin-bottom: 15px;
 }
 
-.hebergement .container-text p{
+.hebergement .container-text p {
     font-size: 14px;
 }
 
-.popular{
+.popular {
     width: 32%;
 }
 
-.popular .presentation{
+.popular .presentation {
     height: 26px;
     display: flex;
     align-items: center;
@@ -300,51 +304,52 @@ form .send:hover {
     justify-content: space-between;
 }
 
-.popular .container-cards{
-    height: 100%; 
+.popular .container-cards {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;   
+    row-gap: 30px;
 }
 
-.popular article{
+.popular article {
     transition: .5s;
 }
 
-.popular article:hover{
+.popular article:hover {
     transform: scale(1.1);
 }
 
-.popular .container-cards a{
+.popular .container-cards a {
     height: 134px;
     display: flex;
     padding: 5px;
     column-gap: 15px;
 }
 
-.popular article .container-img{
-    width: 33%;
+.popular article .container-img {
+    width: 36%;
     border-radius: 17px 0 0 17px;
 }
 
-.popular .container-img img{
+.popular .container-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 17px 0 0 17px;
 }
 
-.popular .container-text{
+.popular .container-text {
     width: 65%;
     display: flex;
     flex-direction: column;
 }
 
-.popular .container-text .descrip{
-    height: 85%;
+.popular .container-text .descrip {
+    height: 80%;
+    padding: 10px 10px 0 0;
 }
 
-.activity{
+.activity {
     display: flex;
     flex-direction: column;
     margin: 0 50px;
@@ -352,23 +357,23 @@ form .send:hover {
     gap: 30px;
 }
 
-.activity .container-cards{
+.activity .container-cards {
     display: flex;
-    gap: 30px;
+    column-gap: 30px;
 }
 
-.activity article{
+.activity article {
     width: 25%;
     box-shadow: 0 1px 10px #dddddd;
 }
 
-.activity .container-cards .container-img{
+.activity .container-cards .container-img {
     height: 380px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
 
-.activity .container-cards img{
+.activity .container-cards img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -376,17 +381,22 @@ form .send:hover {
     transition: .8s;
 }
 
-.activity .container-cards img:hover{
+.activity .container-cards img:hover {
     transform: scale(1.2);
 }
 
-.activity .container-cards .container-text{
-    padding: 20px 19px;
+.activity .container-cards .container-text {
+    height: 59px;
+    display: flex;
+    align-items: center;
     border-radius: 0 0 20px 20px;
+    padding-left: 15px;
 }
 
-.activity .container-text h4{
+.activity .container-text h4 {
     height: 19px;
+    display: flex;
+    align-items: center;
 }
 
 /* ---------------- */
@@ -397,7 +407,7 @@ footer {
     margin: 0 50px;
 }
 
-footer div{
+footer div {
     row-gap: 15px;
     width: 33%;
     display: flex;
@@ -405,10 +415,41 @@ footer div{
     padding: 20px;
 }
 
-footer a:hover{
+footer a:hover {
     opacity: 50%;
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .container-hebergement-popular {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .hebergement,
+    .popular {
+        width: unset;
+    }
+
+    .popular .container-cards {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .popular .container-cards article {
+        width: 33%;
+    }
+
+    .activity .container-cards .container-img {
+        height: 200px;
+    }
+
+    .activity .container-cards .container-text {
+        height: 70px;
+    }
+
+    .activity .container-cards h4 {
+        height: 38px;
+    }
+}
 
 @media screen and (max-width: 768px) {}
