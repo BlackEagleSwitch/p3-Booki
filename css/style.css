@@ -75,7 +75,79 @@ header nav a:hover {
 
 /* ---------- */
 
-main {}
+main {
+    padding: 0 50px;
+}
+
+.research {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.presentation {
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.presentation h2 {
+    font-size: 22px;
+}
+
+.presentation p {
+    font-size: 16px;
+}
+
+form {
+    height: 49px;
+    display: flex;
+}
+
+form .fa-location-dot {
+    width: 50px;
+    height: 49px;
+    display: flex;
+    color: black;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+form .search-bar {
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    border: #F2F2F2 solid 2px;
+}
+
+form .search-bar[type=text] {
+    outline: none;
+    padding: 0 5px 0 6px;
+}
+
+form .send {
+    width: 132px;
+    height: 49px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    color: white;
+    left: -1px;
+}
+
+form .send:hover {
+    box-shadow: 1px 2px 4px grey;
+}
 
 footer {}
 
