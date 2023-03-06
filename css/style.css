@@ -287,6 +287,14 @@ form .send:hover {
     width: 32%;
 }
 
+.popular .presentation{
+    height: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .popular .container-cards{
     height: 100%; 
     display: flex;
@@ -294,8 +302,33 @@ form .send:hover {
     row-gap: 30px;   
 }
 
-.popular .container-cards article{
-    height: 33%;
+.popular .container-cards a{
+    height: 134px;
+    display: flex;
+    padding: 5px;
+    column-gap: 15px;
+}
+
+.popular article .container-img{
+    width: 33%;
+    border-radius: 17px 0 0 17px;
+}
+
+.popular .container-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px 0 0 17px;
+}
+
+.popular .container-text{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular .container-text div{
+    height: 85%;
 }
 
 /* ---------------- */
