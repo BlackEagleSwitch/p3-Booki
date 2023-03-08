@@ -77,12 +77,15 @@ header img {
 
 header nav {
     display: flex;
-    column-gap: 69px;
     margin-right: 42px;
 }
 
 header nav a {
     padding-top: 16px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav a:hover {
